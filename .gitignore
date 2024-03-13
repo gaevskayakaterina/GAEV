@@ -7,4 +7,5 @@ pi22-3
 pi22-4
 lsbaws/
 venv/
-
+.idea/
+__pycache__/
