@@ -1,15 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys
-import threading
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import socket
 
 sock = socket.socket()
-sock.connect(('localhost', 9090))
-sock.send('hello, world!')
+sock.connect(('', 9090))
+message = 'hello, world!'
+sock.send(message.encode('utf-8'))
 
 data = sock.recv(1024)
 sock.close()
 
-print (data)
+print(data)
